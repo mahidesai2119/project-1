@@ -2,7 +2,7 @@ function Header() {
     return (
         <main style={main.navstyle}>
             <div>
-                <img style={main.logostyle} src="" alt="logo" />
+                <img style={main.logostyle} src="https://bookscape.com/_next/static/media/bookscapelogo.3fe396d0.svg" alt="logo" />
             </div>
 
             <div>
