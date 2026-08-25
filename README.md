@@ -6,6 +6,7 @@ This project displays a collection of books with their title, author, category, 
 ##  Features
 
 * Display multiple books
+* Slider of image
 * Book cover images
 * Book title and author
 * Book category
@@ -83,4 +84,4 @@ The project uses an external CSS file for the Home page, inline CSS for Footer, 
 
 ## video link:
 
-https://drive.google.com/file/d/1zg9VOcNjLhkESi-8zWsk37yMy8aB/view?usp=sharing
+https://drive.google.com/file/d/1MYs3bG3bXaWBLFHwxTKhG30Pnj1-fU-X/view?usp=sharing

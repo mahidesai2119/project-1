@@ -87,3 +87,124 @@
     color: #3d352d;
     margin-top: 15px;
 }
+
+.book-carousel {
+  width: 90%;
+  max-width: 1200px;
+  height: 500px;
+  margin: 40px auto;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+  position: relative;
+}
+
+.book-carousel .carousel-item {
+  height: 500px;
+}
+
+.book-carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(65%);
+}
+
+.book-carousel .carousel-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.1)
+  );
+}
+
+.book-carousel .carousel-caption {
+  z-index: 2;
+  text-align: left;
+  left: 8%;
+  right: 30%;
+  bottom: 22%;
+}
+
+.book-carousel .carousel-caption h1 {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  font-family: Georgia, serif;
+}
+
+.book-carousel .carousel-caption p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.shop-btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  background: #f4dfc1;
+  color: #3b2a20;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.shop-btn:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.book-carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  margin: 0 5px;
+}
+
+.book-carousel .carousel-control-prev,
+.book-carousel .carousel-control-next {
+  width: 8%;
+}
+
+@media (max-width: 768px) {
+
+  .book-carousel {
+    width: 94%;
+    height: 380px;
+    margin: 25px auto;
+    border-radius: 18px;
+  }
+
+  .book-carousel .carousel-item {
+    height: 380px;
+  }
+
+  .book-carousel .carousel-caption {
+    left: 8%;
+    right: 8%;
+    bottom: 18%;
+    text-align: center;
+  }
+
+  .book-carousel .carousel-caption h1 {
+    font-size: 28px;
+  }
+
+  .book-carousel .carousel-caption p {
+    font-size: 14px;
+  }
+
+  .shop-btn {
+    padding: 9px 20px;
+    font-size: 14px;
+  }
+}
